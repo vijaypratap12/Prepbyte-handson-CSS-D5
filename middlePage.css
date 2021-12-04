@@ -1,0 +1,56 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.main-heading {
+  text-align: center;
+}
+.box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+.box {
+  height: 80px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: green;
+}
+
+.box1 {
+  width: 100px;
+  transition: width 2s ease-in-out;
+}
+
+.box1:hover {
+  width: 250px;
+}
+
+.box2 {
+  width: 100px;
+  height: 80px;
+  transition: all 2s ease-in-out;
+}
+.box2:hover {
+  width: 250px;
+  height: 250px;
+}
+
+.box3 {
+  width: 100px;
+  transition: all 2s ease-in-out;
+}
+.box3:hover {
+  width: 300px;
+}
+
+.lower-links {
+  position: relative;
+  text-align: center;
+  transform: translateY(730px);
+}

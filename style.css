@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(184, 184, 30);
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 30px;
+}
+.box1 {
+  display: inline-block;
+  background-color: grey;
+  animation-name: firstrow;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes firstrow {
+  from {
+    transform: skew(-30deg);
+  }
+  to {
+    transform: skew(30deg);
+  }
+}
+
+.box2 {
+  display: inline-block;
+  transform: skewY(-30deg);
+  background-color: tomato;
+  animation-name: secondrow;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes secondrow {
+  from {
+    transform: skewY(-30deg);
+  }
+  to {
+    transform: skewY(30deg);
+  }
+}
+
+.box3 {
+  display: inline-block;
+  background-color: grey;
+  animation-name: thirdrow;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes thirdrow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.four-box1 {
+  display: inline-block;
+  background-color: grey;
+  animation-name: fourrow1;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fourrow1 {
+  from {
+    transform: rotateX(55deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.four-box2 {
+  display: inline-block;
+  background-color: maroon;
+  animation-name: fourrow2;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fourrow2 {
+  from {
+    transform: rotateY(55deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+.four-box3 {
+  display: inline-block;
+  background-color: green;
+  animation-name: fourrow3;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fourrow3 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.nextpage-link {
+  font-size: 35px;
+  text-align: center;
+  transform: translateY(700px);
+}
