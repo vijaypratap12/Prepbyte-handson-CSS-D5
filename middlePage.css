@@ -43,9 +43,41 @@
 
 .box3 {
   width: 100px;
-  transition: all 2s ease-in-out;
+  transition: all 2s linear;
 }
 .box3:hover {
+  width: 300px;
+}
+
+.box4 {
+  width: 100px;
+  transition: all 2s ease;
+}
+.box4:hover {
+  width: 300px;
+}
+
+.box5 {
+  width: 100px;
+  transition: all 2s ease-in;
+}
+.box5:hover {
+  width: 300px;
+}
+
+.box6 {
+  width: 100px;
+  transition: all 2s ease-out;
+}
+.box6:hover {
+  width: 300px;
+}
+
+.box7 {
+  width: 100px;
+  transition: all 2s ease-in-out;
+}
+.box7:hover {
   width: 300px;
 }
 
